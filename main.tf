@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "cinammon-org" # app.terraform.io
+    workspaces {
+      name = "learn-terraform-aws"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
