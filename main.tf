@@ -10,11 +10,11 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = "us-east-1"
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-08d70e59c07c61a3a"
+  ami           = "ami-0953476d60561c955" # Amazon Linux 2023 AMI 2023.7.20250512.0 x86_64 HVM kernel-6.1
   instance_type = "t2.micro"
 
   tags = {
